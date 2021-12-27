@@ -9,11 +9,21 @@
   "author": "shrey2697@gmail.com",
   "license": "ISC",
   "bin": {
-    "create-component": "./bin/index.js"
+    "create-component": "bin/index.js"
   },
   "dependencies": {
     "chalk": "^2.4.2",
     "fs-extra": "^10.0.0",
     "inquirer": "^8.2.0"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shrey2697/Spawn-React-Component.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/shrey2697/Spawn-React-Component/issues"
+  },
+  "homepage": "https://github.com/shrey2697/Spawn-React-Component#readme"
 }
