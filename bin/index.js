@@ -34,7 +34,8 @@ async function init() {
     ]);
     const fs = require("fs-extra");
     const path = require("path");
-    const component_directory = `${__dirname}/${component_name}`;
+    const component_directory = `${process.cwd()}/${component_name}`;
+    console.log(process.cwd());
     fs.mkdirSync(component_directory);
     files_needed.forEach((file) => {
       fs.writeFileSync(
@@ -45,7 +46,7 @@ async function init() {
             console.log(err);
             process.exit(1);
           }
-        },
+        }
       );
     });
     console.log(chalk.white.bgGreen("Component created"));
