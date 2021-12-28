@@ -1,6 +1,6 @@
 {
   "name": "spawn-react-component",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Spawn React Component creates a React component.",
   "main": "index.js",
   "scripts": {
