@@ -4,7 +4,7 @@ Spawn React Component creates a React Component in the directory you are current
 
 ## Installation
 
-Run `npm install -g spawn-react-conmponent`
+Run `npm install -g spawn-react-component`
 
 ## How to use
 
