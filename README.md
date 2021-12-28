@@ -16,3 +16,13 @@ To create a component,
   - index.js
   - [component-name].js
   - styles.css
+
+## Contributing
+
+Create a `feature` or `fix` branch based on your contribution and then create a pull request.
+
+## Upcoming features
+
+- Typescript support
+- Styled components
+- VS Code extension
