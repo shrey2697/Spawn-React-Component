@@ -1,6 +1,6 @@
 {
   "name": "spawn-react-component",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Spawn React Component creates a React component.",
   "main": "index.js",
   "scripts": {
@@ -21,7 +21,12 @@
     "type": "git",
     "url": "git+https://github.com/shrey2697/Spawn-React-Component.git"
   },
-  "keywords": [],
+  "keywords": [
+    "react",
+    "react-component",
+    "javascript",
+    "typescript"
+  ],
   "bugs": {
     "url": "https://github.com/shrey2697/Spawn-React-Component/issues"
   },
