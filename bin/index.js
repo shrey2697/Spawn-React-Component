@@ -22,14 +22,27 @@ async function init() {
         validate: validateName,
       },
     ]);
-
+    const { is_typescript } = await inquirer.prompt([
+      {
+        name: "is_typescript",
+        type: "confirm",
+        message: "Is this a Typescript component?",
+        default: true,
+      },
+    ]);
+    const index_extension = is_typescript ? "ts" : "js";
+    const react_file_extension = is_typescript ? "tsx" : "js";
     const { files_needed } = await inquirer.prompt([
       {
         name: "files_needed",
         type: "checkbox",
         message: "Please select the files you want to create.",
         default: false,
-        choices: ["index.js", `${component_name}.js`, "styles.css"],
+        choices: [
+          `index.${index_extension}`,
+          `${component_name}.${react_file_extension}`,
+          "styles.css",
+        ],
       },
     ]);
     const fs = require("fs-extra");

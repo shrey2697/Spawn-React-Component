@@ -23,6 +23,5 @@ Create a `feature` or `fix` branch based on your contribution and then create a 
 
 ## Upcoming features
 
-- Typescript support
 - Styled components
 - VS Code extension
