@@ -30,19 +30,34 @@ async function init() {
         default: true,
       },
     ]);
+    const { is_rn } = await inquirer.prompt([
+      {
+        name: "is_rn",
+        type: "confirm",
+        message: "Is this a React Native component?",
+        default: false,
+      },
+    ]);
     const index_extension = is_typescript ? "ts" : "js";
+
     const react_file_extension = is_typescript ? "tsx" : "js";
+
+    let choices = [
+      `index.${index_extension}`,
+      `${component_name}.${react_file_extension}`,
+    ];
+
+    is_rn
+      ? choices.push(`${component_name}.styles.${index_extension}`)
+      : choices.push("styles.css");
+
     const { files_needed } = await inquirer.prompt([
       {
         name: "files_needed",
         type: "checkbox",
         message: "Please select the files you want to create.",
         default: false,
-        choices: [
-          `index.${index_extension}`,
-          `${component_name}.${react_file_extension}`,
-          "styles.css",
-        ],
+        choices: choices,
       },
     ]);
     const fs = require("fs-extra");

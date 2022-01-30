@@ -18,5 +18,8 @@ module.exports.getFileContents = (file, component_name) => {
       }`;
     case "styles.css":
       return `/* Your styles go here... */`;
+    case `${component_name}.styles.ts`:
+    case `${component_name}.styles.js`:
+      return `import { StyleSheet } from 'react-native'\nconst styles = StyleSheet.create({\n\t// Your styles go here...\n})\nexport default styles`;
   }
 };
