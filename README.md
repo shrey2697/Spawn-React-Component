@@ -6,6 +6,10 @@ Spawn React Component creates a React Component in the directory you are current
 
 Run `npm install -g spawn-react-component`
 
+## What's new?
+
+Added React Native component support.
+
 ## How to use
 
 To create a component,
